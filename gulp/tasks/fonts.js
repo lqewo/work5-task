@@ -15,7 +15,7 @@ export const otfToTtf = () => {
 		.pipe(fonter({
 			formats: ['ttf']
 		}))
-		// выгружаем в исходную папку 
+		// выгружаем в исходную папку
 		.pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))
 }
 
@@ -58,7 +58,7 @@ export const fontsStyle = () => {
 					let fontFileName = fontsFiles[i].split('.')[0];
 					if (newFileOnly !== fontFileName) {
 						let fontName = fontFileName.split('-')[0] ? fontFileName.split('-')[0] : fontFileName;
-						let fontWeight = fontFileName.split('-')[1] ? fontFileName.split('-')[0] : fontFileName;
+						let fontWeight = fontFileName.split('-')[1] ? fontFileName.split('-')[1] : fontFileName;
 						if (fontWeight.toLowerCase() === 'thin') {
 							fontWeight = 100;
 						}	else if (fontWeight.toLowerCase() === 'extralight') {
@@ -83,7 +83,7 @@ export const fontsStyle = () => {
 					}
 				}
 			} else {
-				// Если файл есть, выводим сообщение 
+				// Если файл есть, выводим сообщение
 				console.log("Файл scss/_fonts.scss уже существует");
 			}
 		}

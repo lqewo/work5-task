@@ -3,7 +3,184 @@
 	@@include('html/head.html', { "title":"Work5" })
 	<body>
 		@@include('html/header.html', {})
-		<main></main>
+		<main>
+			<section class="my-shops">
+				<div class="container">
+					<div class="my-shops__inner">
+						<aside class="aside-menu">
+							<div class="aside-menu__box">
+								<div class="aside-menu__logo">
+									<img src="@img/logo.png" alt="logo" />
+								</div>
+								<button href="#" class="burger-menu">
+									<span></span>
+								</button>
+							</div>
+
+							<ul class="aside-menu__list">
+								<li class="aside-menu__item">
+									<a href="#" class="aside-menu__link">
+										<img src="@img/home.png" alt="" class="aside-menu__img" />
+										<div class="aside-menu__text">Главная</div>
+									</a>
+								</li>
+								<li class="aside-menu__item active">
+									<a href="#" class="aside-menu__link">
+										<img
+											src="@img/shopping-cart.png"
+											alt=""
+											class="aside-menu__img"
+										/>
+										<div class="aside-menu__text">Мои магазины</div>
+									</a>
+								</li>
+								<li class="aside-menu__item">
+									<a href="#" class="aside-menu__link">
+										<img
+											src="@img/megaphone.png"
+											alt=""
+											class="aside-menu__img"
+										/>
+										<div class="aside-menu__text">Промоматериалы</div>
+									</a>
+								</li>
+								<li class="aside-menu__item">
+									<a href="#" class="aside-menu__link">
+										<img
+											src="@img/pie-chart.png"
+											alt=""
+											class="aside-menu__img"
+										/>
+										<div class="aside-menu__text">Статистика</div>
+									</a>
+								</li>
+								<li class="aside-menu__item">
+									<a href="#" class="aside-menu__link">
+										<img src="@img/wallet.png" alt="" class="aside-menu__img" />
+										<div class="aside-menu__text">Баланс</div>
+									</a>
+								</li>
+								<li class="aside-menu__item">
+									<a href="#" class="aside-menu__link">
+										<img
+											src="@img/profile.png"
+											alt=""
+											class="aside-menu__img"
+										/>
+										<div class="aside-menu__text">Персональные данные</div>
+									</a>
+								</li>
+								<li class="aside-menu__item">
+									<a href="#" class="aside-menu__link">
+										<img
+											src="@img/information.png"
+											alt=""
+											class="aside-menu__img"
+										/>
+										<div class="aside-menu__text">FAQ</div>
+									</a>
+								</li>
+								<li class="aside-menu__item">
+									<a href="#" class="aside-menu__link">
+										<img
+											src="@img/music-and-multimedia.png"
+											alt=""
+											class="aside-menu__img"
+										/>
+										<div class="aside-menu__text">Техподдержка</div>
+									</a>
+								</li>
+								<li class="aside-menu__item">
+									<a href="#" class="aside-menu__link">
+										<img src="@img/logout.png" alt="" class="aside-menu__img" />
+										<div class="aside-menu__text">Выход</div>
+									</a>
+								</li>
+							</ul>
+						</aside>
+						<div class="content">
+							<div class="content__header">
+								<div class="bredcrumbs">
+									<ul class="bredcrumbs__list">
+										<li class="bredcrumbs__item">
+											<a class="bredcrumbs__link" href="#">Главная</a>
+										</li>
+										<li class="bredcrumbs__item">
+											<span>Мои магазины</span>
+										</li>
+									</ul>
+								</div>
+								<div class="content__header-box">
+									<div class="content__header-message">
+										<a href="#" class="content__header-link">
+											<img
+												src="@img/message.png"
+												alt="message"
+												class="content__header-img"
+											/>
+										</a>
+									</div>
+									<a href="#" class="content__header-profile">
+										<img
+											src="@img/user.png"
+											alt=""
+											class="content__header-img"
+										/>
+										<div class="content__header-user">Максим Добжанский</div>
+									</a>
+								</div>
+							</div>
+							<div class="content__btn">Создать свой магазин</div>
+							<div class="content__title">Управление магазинами</div>
+							<div class="content__wrapper">
+								<table class="content__table">
+									<tr>
+										<th class="number">№</th>
+										<th class="name">Название</th>
+										<th class="street">Адрес</th>
+										<th class="action">Действие</th>
+									</tr>
+									<tr class="table__item">
+										<td>12345</td>
+										<td>Дипломная работа</td>
+										<td>
+											<a href="http://www.work5.ru/services"
+												>http://www.work5.ru/services</a
+											>
+										</td>
+										<td class="btn">
+											<button class="content__btn content__btn-edit">
+												Редактировать
+											</button>
+											<button class="content__btn content__btn-close">
+												Редактировать
+											</button>
+										</td>
+									</tr>
+									<tr class="table__item">
+										<td>12345</td>
+										<td>Дипломная работа</td>
+										<td>
+											<a href="http://www.work5.ru/services"
+												>http://www.work5.ru/services</a
+											>
+										</td>
+										<td class="btn">
+											<button class="content__btn content__btn-edit">
+												Редактировать
+											</button>
+											<button class="content__btn content__btn-close">
+												Редактировать
+											</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		@@include('html/footer.html', {})
 		<script src="js/app.min.js"></script>
 	</body>
