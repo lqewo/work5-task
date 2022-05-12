@@ -1057,6 +1057,10 @@
   color: #7d7d7d;
 }
 
+.popup__info-text > a {
+  color: #6666cc;
+}
+
 .popup__btn {
   display: flex;
   align-items: center;
@@ -5604,12 +5608,16 @@ body {
 }
 
 @media (max-width: 1350px) {
+  .content {
+    width: auto;
+  }
+
   .content__table {
     width: auto;
   }
 
   .content__table th {
-    min-width: auto !important;
+    min-width: 0 !important;
   }
 }
 
@@ -5619,7 +5627,7 @@ body {
   }
 
   .content__table th {
-    min-width: auto !important;
+    min-width: 0 !important;
   }
 
   .content__table td {
