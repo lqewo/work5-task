@@ -79,7 +79,10 @@
         appearance: none;
         padding: 6px 15px;
         outline: none;
-
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 12px;
+        color: #7c7c7c;
     }
 
     &__template-wrapper, &__color-schem-wrapper {
