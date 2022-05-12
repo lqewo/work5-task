@@ -1,0 +1,207 @@
+.fancybox__carousel.is-draggable .fancybox__slide, .fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
+   cursor: auto;
+}
+
+.fancybox__backdrop {
+    background: var(--fancybox-bg,rgba(190, 190, 190, 0.2));
+
+}
+
+.fancybox__content>.carousel__button.is-close {
+    color: var(--fancybox-color,#111);
+    top: 19px;
+    right: 19px;
+}
+
+#dialog-content {
+
+    width: 616px;
+    max-width: 616px !important;
+    height: 444px;
+    border-radius: 5px;
+    left: -90px;
+    top: -110px;
+}
+
+.fancybox__content {
+    padding: 26px;
+    padding-left: 22px;
+}
+
+.popup {
+
+    // .popup__title
+
+    &__title {
+        font-size: 20px;
+
+    }
+
+
+    // .popup__selects
+
+    &__selects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 47px;
+
+    }
+
+    // .popup__template
+    // .popup__color-schem
+
+    &__color-schem,
+    &__template {
+        color: #7c7c7c;
+    }
+
+    // .popup__template-text,
+    // .popup__color-schem-text
+    &__template-text, &__color-schem-text,&__domain-text {
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 21px;
+        color: #343434;
+    }
+
+    // .popup__template-select
+    // .popup__color-schem-select
+
+
+    &__color-schem-select,
+    &__template-select {
+        position: relative;
+        border: 1px solid rgb(205, 205, 205);
+        border-radius: 3px;
+        width: 238px;
+        height: 34px;
+        appearance: none;
+        padding: 6px 15px;
+        outline: none;
+
+    }
+
+    &__template-wrapper, &__color-schem-wrapper {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url('../img/arr-down.png');
+            background-repeat: no-repeat;
+            width: 9px;
+            height: 7px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+        }
+    }
+    // .popup__domain
+
+    &__domain {
+    }
+    &__domain-text {
+        margin-top: 30px;
+        margin-bottom: 6px;
+    }
+
+    // .popup__domain-input
+    &__domain-wrapper {
+        position: relative;
+        &::after {
+            content: '.work5.ru';
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            position: absolute;
+            width: 151px;
+            height: 100%;
+            background-color: #6666cc;
+            right: 0;
+            padding-top: 9px;
+
+        }
+    }
+
+    &__domain-input {
+        position: relative;
+        color: #7d7d7d;
+        font-size: 14px;
+        line-height: 21px;
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+        background-color: rgb(230, 230, 233);
+        height: 36px;
+        outline: none;
+        padding: 0 14px;
+
+
+    }
+
+    // .popup__info
+
+    &__info {
+        display: flex;
+        margin-left: 2px;
+        margin-top: 31px;
+    }
+
+    // .popup__info-img
+
+    &__info-img {
+        width: 52px;
+        height: 52px;
+    }
+
+    // .popup__info-text
+
+    &__info-text {
+        padding-left: 17px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #7d7d7d;
+    }
+
+    // .popup__btn
+
+    &__btn {
+        display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       margin-top: 20px;
+    }
+
+    // .popup__btn-btn
+
+    &__btn-btn {
+        margin-top: 20px;
+        margin-left: 2px;
+        background-color: rgb(85, 201, 123);
+        color: #fff;
+        border-radius: 3px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        line-height: 14px;
+        width: 151px;
+        height: 36px;
+    }
+
+    // .popup__btn-btn--cancel
+
+    &__btn-btn--cancel {
+        background-color: #b1b1b1;
+        margin-right: 9px;
+    }
+
+    // .popup__btn-btn--create
+
+    &__btn-btn--create {
+        background-color: #55c97b;
+    }
+}
+
+
+
+

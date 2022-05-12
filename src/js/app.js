@@ -5,6 +5,7 @@ import $ from 'jquery';
 flsFunction.isWebp();
 
  import Swiper, { Navigation, Pagination } from 'swiper';
+ import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
   const swiper = new Swiper();
 
@@ -17,3 +18,4 @@ flsFunction.isWebp();
 
       })
   })
+

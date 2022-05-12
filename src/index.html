@@ -130,7 +130,14 @@
 									</a>
 								</div>
 							</div>
-							<div class="content__btn">Создать свой магазин</div>
+							<button
+								data-fancybox="dialog"
+								data-src="#dialog-content"
+								class="content__btn create-shop"
+								style="min-width: 180px"
+							>
+								Создать свой магазин
+							</button>
 							<div class="content__title">Управление магазинами</div>
 							<div class="content__wrapper">
 								<table class="content__table">
@@ -175,6 +182,64 @@
 										</td>
 									</tr>
 								</table>
+							</div>
+						</div>
+					</div>
+					<div class="popup">
+						<div id="dialog-content" style="display: none">
+							<h2 class="popup__title">Создать магазин</h2>
+							<div class="popup__selects">
+								<div class="popup__template">
+									<div class="popup__template-text">Шаблон</div>
+									<div class="popup__template-wrapper">
+										<select class="popup__template-select">
+											<option value="Стандартная">Стандартная</option>
+											<option value="Стандартная">Стандартная</option>
+											<option value="Стандартная">Стандартная</option>
+										</select>
+									</div>
+								</div>
+								<div class="popup__color-schem">
+									<div class="popup__color-schem-text">Цветовая схема</div>
+									<div class="popup__color-schem-wrapper">
+										<select class="popup__color-schem-select">
+											<option value="Класическая">Класическая</option>
+											<option value="Класическая">Класическая</option>
+											<option value="Класическая">Класическая</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="popup__domain">
+								<div class="popup__domain-text">Домен</div>
+								<div class="popup__domain-wrapper">
+									<input
+										type="text"
+										class="popup__domain-input"
+										placeholder="Например: ivangrozniy"
+									/>
+								</div>
+							</div>
+							<div class="popup__info">
+								<img
+									class="popup__info-img"
+									src="@img/warning.png"
+									alt="warning"
+								/>
+								<div class="popup__info-text">
+									В названии домена разрешены латиница и “-”, запрещается
+									использовать словосочетание Work 5. После создания магазина Вы
+									сможете прикрутить свой домен (например ivangrozniy.ru).
+									Подробнее по <a href="#">ссылке</a>
+								</div>
+							</div>
+							<div class="popup__btn">
+								<button class="popup__btn-btn popup__btn-btn--cancel">
+									Отмена
+								</button>
+								<button class="popup__btn-btn popup__btn-btn--create">
+									Создать
+								</button>
 							</div>
 						</div>
 					</div>
